@@ -1,9 +1,23 @@
-import React from 'react'
+import Link from "next/link";
 
-const Sample2 = () => {
+export default function Sample2() {
     return (
-        <div>Sample2</div>
-    )
-}
+        <div className="w-full min-h-screen flex flex-col gap-8 items-center justify-center">
+            <Link
+                href="/sample2/get"
+                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl text-2xl font-bold hover:underline hover:scale-105 transition-all"
+            >
+                Sample 2 Get
+            </Link>
 
-export default Sample2
+            <span className="w-full h-px rounded-full bg-gray-200" />
+
+            <Link
+                href="/sample2/post"
+                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl text-2xl font-bold hover:underline hover:scale-105 transition-all"
+            >
+                Sample 2 Post
+            </Link>
+        </div>
+    );
+}
