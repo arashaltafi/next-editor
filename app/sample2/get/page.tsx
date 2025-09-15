@@ -72,7 +72,7 @@ const Sample2Get = () => {
 
                         <div
                             className="w-full prose text-sm lg:text-lg leading-6 lg:leading-7 text-justify border border-gray-400 rounded-xl p-8"
-                            dangerouslySetInnerHTML={{ __html: data.desc }}
+                            dangerouslySetInnerHTML={{ __html: data.desc.replaceAll('\&quot;', '') }}
                         />
                         {/* <DisplayUIJson
                             json={JSON.parse(data.desc || '{}')}
