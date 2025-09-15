@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
+import { ToastContainer } from "react-toastify";
 
 const interSans = Inter({
   variable: "--font-inter",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${interSans.className} antialiased`}
       >
+        <ToastContainer />
         {children}
       </body>
     </html>
