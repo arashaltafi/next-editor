@@ -22,6 +22,7 @@
     "formidable": "^3.5.4",
     "isomorphic-dompurify": "^2.26.0",
     "lottie-react": "^2.4.1",
+    "mongoose": "^8.18.1",
     "next": "15.3.5",
     "nookies": "^2.5.2",
     "nprogress": "^0.2.0",

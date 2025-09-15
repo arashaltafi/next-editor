@@ -1,21 +1,21 @@
 import { NextResponse } from 'next/server';
 
-export function GET() {
+export const GET = () => {
     return NextResponse.json({ message: 'Welcome To My Application!' }, { status: 200 });
 }
 
-export function POST() {
+export const POST = () => {
     return NextResponse.json({ message: 'Welcome To My Application!' }, { status: 200 });
 }
 
-export function DELETE() {
+export const DELETE = () => {
     return NextResponse.json({ message: 'Welcome To My Application!' }, { status: 200 });
 }
 
-export function PUT() {
+export const PUT = () => {
     return NextResponse.json({ message: 'Welcome To My Application!' }, { status: 200 });
 }
 
-export function PATCH() {
+export const PATCH = () => {
     return NextResponse.json({ message: 'Welcome To My Application!' }, { status: 200 });
 }
