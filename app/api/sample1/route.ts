@@ -47,7 +47,7 @@ export const POST = async (req: Request) => {
         await connectToDB();
 
         const rawBody = (await req.json()) as Sample1Dto;
-        const body = trimStrings(rawBody);
+        const body = rawBody //trimStrings(rawBody);
 
         const newItem = await Sample1Model.create({
             title: body.title,

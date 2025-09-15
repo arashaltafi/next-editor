@@ -61,7 +61,7 @@ const Sample2Get = () => {
                 !loading && !data ? (
                     <p className="mt-16 text-xl text-gray-500">No data found</p>
                 ) : !loading && data && (
-                    <div className="w-full max-w-screen-lg mx-auto py-8 flex flex-col items-start justify-start px-5 lg:px-8 space-y-6">
+                    <div className="w-full py-8 flex flex-col items-start justify-start gap-16 px-5 lg:px-8">
                         <h2 className="text-xl font-semibold">{data.title}</h2>
 
                         <img
@@ -71,7 +71,7 @@ const Sample2Get = () => {
                         />
 
                         <div
-                            className="prose text-sm lg:text-lg leading-6 lg:leading-7 text-justify border border-gray-400 rounded-xl mx-8 my-4 p-8"
+                            className="w-full prose text-sm lg:text-lg leading-6 lg:leading-7 text-justify border border-gray-400 rounded-xl p-8"
                             dangerouslySetInnerHTML={{ __html: data.desc }}
                         />
                         {/* <DisplayUIJson

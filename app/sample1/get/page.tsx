@@ -61,7 +61,7 @@ const Sample1Get = () => {
                 !loading && !data ? (
                     <p className="mt-16 text-xl text-gray-500">No data found</p>
                 ) : !loading && data && (
-                    <div className="w-full max-w-screen-lg mx-auto py-8 flex flex-col items-start justify-start px-5 lg:px-8 space-y-6">
+                    <div className="w-full py-8 flex flex-col gap-16 items-start justify-start px-5 lg:px-8">
                         <h2 className="text-xl font-semibold">{data.title}</h2>
 
                         <img
@@ -75,7 +75,7 @@ const Sample1Get = () => {
                             dangerouslySetInnerHTML={{ __html: data.desc }}
                         /> */}
                         <DisplayUIJson
-                            className="border border-gray-400 rounded-xl mx-8 my-4 p-8"
+                            className="w-full border border-gray-400 rounded-xl p-8"
                             json={JSON.parse(data.desc || '{}')}
                         />
                     </div>
