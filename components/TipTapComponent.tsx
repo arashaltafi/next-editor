@@ -54,7 +54,6 @@ import 'katex/dist/katex.min.css'
 import 'easydrawer/styles.css'
 import 'react-image-crop/dist/ReactCrop.css';
 import "@excalidraw/excalidraw/index.css";
-import { MAX_FILE_SIZE } from '@/utils/Constant';
 
 const extensions = [
     BaseKit.configure({
@@ -128,7 +127,7 @@ const extensions = [
         onError: (error: any) => {
             alert(error.message);
         },
-        maxSize: MAX_FILE_SIZE,
+        maxSize: 10 * 1024 * 1024,
         acceptMimes: ['image/jpeg', 'image/jpg', 'image/png']
     }),
     Video.configure({
