@@ -71,7 +71,7 @@ const Sample2Get = () => {
                         />
 
                         <div
-                            className="prose text-sm lg:text-lg leading-6 lg:leading-7 text-justify"
+                            className="prose text-sm lg:text-lg leading-6 lg:leading-7 text-justify border border-gray-400 rounded-xl mx-8 my-4 p-8"
                             dangerouslySetInnerHTML={{ __html: data.desc }}
                         />
                         {/* <DisplayUIJson

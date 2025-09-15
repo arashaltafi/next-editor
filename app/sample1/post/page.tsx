@@ -104,7 +104,7 @@ const Sample1Post = (props: PropsType) => {
 
         if (data.success) {
             showToast("Saved Successfully", "success")
-            router.refresh()
+            router.back()
         }
     };
 

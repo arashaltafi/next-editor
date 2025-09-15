@@ -105,7 +105,7 @@ const Sample2Post = (props: PropsType) => {
 
         if (data.success) {
             showToast("Saved Successfully", "success")
-            router.refresh()
+            router.back()
         }
     };
 
@@ -185,10 +185,6 @@ const Sample2Post = (props: PropsType) => {
                         >
                             Desc
                         </label>
-                        {/* <TipTapComponentClient
-                            value={descHtml}
-                            onChange={setDescHtml}
-                        /> */}
                         <ReactQuillComponent
                             value={descHtml}
                             onChange={setDescHtml}

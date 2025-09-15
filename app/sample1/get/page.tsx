@@ -75,6 +75,7 @@ const Sample1Get = () => {
                             dangerouslySetInnerHTML={{ __html: data.desc }}
                         /> */}
                         <DisplayUIJson
+                            className="border border-gray-400 rounded-xl mx-8 my-4 p-8"
                             json={JSON.parse(data.desc || '{}')}
                         />
                     </div>
