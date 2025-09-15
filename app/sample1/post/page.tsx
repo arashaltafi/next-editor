@@ -8,6 +8,7 @@ import { showToast } from '@/utils/Toast';
 import { MdDeleteOutline } from 'react-icons/md';
 import Button from '@/components/Button';
 import { useRouter } from 'next/navigation';
+import Address from '@/utils/Address';
 
 interface PropsType {
     desc?: string
@@ -87,7 +88,7 @@ const Sample1Post = (props: PropsType) => {
             updatedForm.desc = JSON.stringify(descHtml || {});
         }
 
-        const res = await fetch("/api/panel/sample1", {
+        const res = await fetch(Address.EndPoints.sample1Post, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedForm),
@@ -108,7 +109,7 @@ const Sample1Post = (props: PropsType) => {
     };
 
     return (
-        <div className='w-full min-h-screen max-w-screen-maxWidth mx-auto flex flex-col items-center justify-start gap-8 my-14'>
+        <div className='w-full min-h-screen flex flex-col items-center justify-start gap-8 px-16 py-8'>
             <h1 className='w-full text-center text-5xl font-bold'>Sample 1 Post</h1>
 
             <form
@@ -189,7 +190,7 @@ const Sample1Post = (props: PropsType) => {
                         />
                         {/* <ReactQuillComponent
                                 value={descHtml}
-                                onChange={setPhoneHtml}
+                                onChange={setDescHtml}
                             /> */}
                     </div>
                 </div>
